@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject2;
+package Assignment1;
 
 import java.io.IOException;
 import static java.lang.Math.floor;
