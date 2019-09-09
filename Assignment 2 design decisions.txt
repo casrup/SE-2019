@@ -1,0 +1,14 @@
+Multiple Choice Question:
+- Questions are represented as an array of strings, where each element in the array is a question.
+- Answers are given a value of 1-3 (assuming here that all questions have 3 choices for answers) and are put into an array where each element corresponds to the question of the same index.
+- Solutions are the represented the same way as the answers and the Score is calculated by comparing all solutions to their corresponding given answers.
+- Since multiple choice questions have only 1 correct answer this shouldn’t be a terrible implementation, as the answer will have to be equal to the solution in order to be correct. Representing answers and solutions as numbers shouldn’t be an issue either, because the content of the answer is irrelevant, only relevant thing is if they are the same. The biggest issue with this implementation is that there may be a different amount of answers to choose from between questions, but that is only going to be an issue for the program that performs the exam.
+
+Examination:
+- Questions are represented as an array of strings, where each element in the array is a question.
+- Answers are represented as an array of strings, where each element in the array is an answer, every index corresponds to a question.
+- Solutions are represented as an array of strings, where each element in the array is a solution, every index corresponds to a question.
+- There is an issue with the implementation, because a given answer cannot be directly compared to a solution to see if the answer is correct. This means that either an algorithm to check if an answer is close enough to an accepted solution would need to be implemented, but that doesn’t seem to be within the scope of this assignment. This means that the score needs to be incremented manually after seeing the answers and solutions to a given question, where an examiner will have to judge if that answer is correct enough to give a point.
+
+Extra:
+I didn’t end up having time to do this, but I would have made a program that could read a file with a specific setup, and translated that into questions, answers and solutions, which would be everything needed to perform the exam. Then these results would need to be stored in a separate file
